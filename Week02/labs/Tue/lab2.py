@@ -12,7 +12,7 @@ print("Elements: ", elements)
 def get_valid_int_input(prompt):
     while True:
         try:
-            return int(input(print))
+            return int(input(prompt))
         except ValueError:
             print("Error: Please enter a valid integere!")
             continue
