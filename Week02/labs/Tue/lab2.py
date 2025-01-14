@@ -19,7 +19,7 @@ def get_valid_int_input(prompt):
             print("Error: Please enter a valid integere!")
             continue
 try:
-    elements_selected = get_valid_int_input("Enter the index of the element you like")
+    elements_selected = get_valid_int_input("Enter the index of the element you like: ")
     # Roll dice
     elementRoll = random.randint(1, 6)
     totalNum = elements_selected + elementRoll
@@ -30,6 +30,8 @@ try:
     elif elementRoll <= 4:
         print("Yor element is moderate.")
     else:
-        print("Nice element.")        
+        print("Nice element.")
+except IndexError:
+    print("Error: Invalid element index!")        
 except Exception as e:
-    print("")    
+    print(f"An unexpected error occurred: {e}")    
