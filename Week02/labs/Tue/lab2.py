@@ -16,3 +16,7 @@ def get_valid_int_input(prompt):
         except ValueError:
             print("Error: Please enter a valid integere!")
             continue
+try:
+    elements_selected = get_valid_int_input("Enter the index of the element you like")
+except Exception as e:
+    print("")    
