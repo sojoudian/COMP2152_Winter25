@@ -1,7 +1,7 @@
 import random
 
 # Define the choices array
-choices = ["Rock", "paper", "Scissors"]
+choices = ["Rock", "Paper", "Scissors"]
 
 
 def main():
@@ -22,6 +22,7 @@ def main():
 
 
         # Determine the winer
+        #Atklass: UFNA
         if playerChoice == computerChoice:
             print("It's a tie!")
         elif (playerChoice == 0 and computerChoice == 2) or \
