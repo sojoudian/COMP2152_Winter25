@@ -9,6 +9,19 @@ def number_gussing_game():
 
     while attemps < max_attemps:
         try:
+            userGuess = int(input("Enter your guess: "))
+            #attemps = attemps + 1
+            attemps += 1
+            if userGuess < targetNumber:
+                if abs(userGuess - targetNumber) <= 5:
+                    print("Too low! You're very close! Try again.")
+                else:
+                    print("Too low, try again.")    
+            elif userGuess > targetNumber:
+                if abs(userGuess - targetNumber) <= 5:
+                    print("Too High! You're very close! Try again.")
+                                        
+
             return True
         except:
             print("")
