@@ -13,8 +13,23 @@ def main():
             raise ValueError("Invalid choice!, Please enter Rock, Paper, Scissors")
         
         # Convert the user input to an index
-        player_choice = choices.index(user_input)
+        playerChoice = choices.index(user_input)
 
+        computerChoice = random.randint(0, 2)
+
+        print(f"Player choice {choices[playerChoice]}")
+        print(f"Computer choice {choices[computerChoice]}")
+
+
+        # Determine the winer
+        if playerChoice == computerChoice:
+            print("It's a tie!")
+        elif (playerChoice == 0 and computerChoice == 2) or \
+            (playerChoice == 1 and computerChoice == 0) or \
+            (playerChoice == 2 and computerChoice == 1):
+            print("Player wins")
+        else:
+            print("Computer wins!")
 
     except:
 
