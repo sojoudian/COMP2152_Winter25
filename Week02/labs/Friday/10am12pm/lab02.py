@@ -20,10 +20,14 @@ def number_gussing_game():
             elif userGuess > targetNumber:
                 if abs(userGuess - targetNumber) <= 5:
                     print("Too High! You're very close! Try again.")
-                                        
+                else:
+                    print("Too high! Try again.")
+            else:
+                print(f"Congragulation! You've guessed it in {attemps} attemps.")                    
+                return
+        except ValueError:
+            print("Invalid input! Please enter a number between 1 and 100")
+    print(f"Game over! The target number was {targetNumber}.")
+    
 
-            return True
-        except:
-            print("")
-    play = input()
-    return True
+number_gussing_game()
