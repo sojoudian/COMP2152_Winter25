@@ -4,30 +4,36 @@ import random
 choices = ["Rock", "Paper", "Scissors"]
 
 def main():
-    user_input = input("Enter your choice (Rock, Paper, Scissors)").capitalize()
+    try:
+        user_input = input("Enter your choice (Rock, Paper, Scissors)").capitalize()
 
-    # Validate user input
-    if user_input not in choices:
-        raise ValueError("Invalid choice! Please enter 'Rock', 'Paper, 'Scissors'")
-    
-    # Convert the user input to an index
-    player_choice = choices.index(user_input)
+        # Validate user input
+        if user_input not in choices:
+            raise ValueError("Invalid choice! Please enter 'Rock', 'Paper, 'Scissors'")
 
-    # Randomly select the computer choice
-    computer_choice = random.randint(0,2)
+        # Convert the user input to an index
+        player_choice = choices.index(user_input)
 
-    print(f"Player chose {choices[player_choice]}")    
-    print(f"Computer chose {choices[computer_choice]}")    
+        # Randomly select the computer choice
+        computer_choice = random.randint(0,2)
 
-    # Determine the winer
-    if player_choice == computer_choice:
-        print("It's a tie!")
-    elif (player_choice == 0 and computer_choice==2) or \
-         (player_choice == 1 and computer_choice == 0) or \
-         (player_choice == 2 and computer_choice == 1):
-        print("Player wins!")
-    else:
-        print("Computer wins!")        
+        print(f"Player chose {choices[player_choice]}")    
+        print(f"Computer chose {choices[computer_choice]}")    
+
+        # Determine the winer
+        if player_choice == computer_choice:
+            print("It's a tie!")
+        elif (player_choice == 0 and computer_choice==2) or \
+             (player_choice == 1 and computer_choice == 0) or \
+             (player_choice == 2 and computer_choice == 1):
+            print("Player wins!")
+        else:
+            print("Computer wins!")  
+    except ValueError as e:
+        print(f"Error {e}")
+
+
+
 
 
 # Run the game
