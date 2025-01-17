@@ -4,6 +4,7 @@ choices = ["Rock", "paper", "Scissors"]
 
 def main():
     try:
+        user_input = input("Enter your choice (Rock, Paper, Scissors): ").capitalize()
     except:
 
 
