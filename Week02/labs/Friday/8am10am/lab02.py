@@ -5,7 +5,7 @@ choices = ["Rock", "Paper", "Scissors"]
 
 def main():
     try:
-        user_input = input("Enter your choice (Rock, Paper, Scissors)").capitalize()
+        user_input = input("Enter your choice (Rock, Paper, Scissors): ").capitalize()
 
         # Validate user input
         if user_input not in choices:
