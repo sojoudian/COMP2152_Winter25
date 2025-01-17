@@ -1,4 +1,4 @@
-
+import random
 
 # Define the choices array
 choices = ["Rock", "paper", "Scissors"]
