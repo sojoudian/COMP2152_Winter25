@@ -4,6 +4,9 @@ import random
 # Put all the functions into another file and import them
 import functions_lab06_starter
 
+print("    ------------------------------------------------------------------")
+print("    |    Loading previous game data...")
+
 # Game Flow
 # Define two Dice
 small_dice_options = list(range(1, 7))
@@ -221,7 +224,10 @@ if not input_invalid:
                     num_stars = 3
                 else:
                     num_stars = 2
-
+    if (m_health_points <= 0):
+        winner = "Hero"
+    else:
+        winner = "Monster"
     # Final Score Display
     tries = 0
     input_invalid = True
