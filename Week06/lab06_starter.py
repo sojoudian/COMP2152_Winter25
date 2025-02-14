@@ -6,6 +6,7 @@ import functions_lab06_starter
 
 print("    ------------------------------------------------------------------")
 print("    |    Loading previous game data...")
+# Lab 06 - Question 3 and 4
 
 # Game Flow
 # Define two Dice
@@ -173,6 +174,7 @@ if not input_invalid:
     print("    |    The monster's combat strength is now " + str(
         m_combat_strength) + " using the " + power_roll + " magic power")
     # Lab 06 - Question 6
+
     # Call Recursive function
     print("    |", end="    ")
     num_dream_lvls = input("How many dream levels do you want to go down?")
@@ -251,4 +253,4 @@ if not input_invalid:
     if not input_invalid:
         stars_display = "*" * num_stars
         print("    |    Hero " + short_name + " gets <" + stars_display + "> stars")
-
+        # Lab 06 - Question 3 and 4    
