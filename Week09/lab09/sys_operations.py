@@ -19,5 +19,5 @@ print(socket.getdefaulttimeout())
 print ("-------------------------------\n")
 
 print("Operating System type")
-print(socket.getdefaulttimeout())
+print(os.name)
 print ("-------------------------------\n")
