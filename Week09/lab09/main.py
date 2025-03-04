@@ -79,6 +79,11 @@ input("Roll the dice for the monster's health points (Press enter)")
 m_health_points = random.choice(big_dice_options)
 print("Player rolled " + str(m_health_points) + " health points for the monster")
 
+try:
+    m_health_points = function.hero_attacks("string1", "string2")
+except TypeError as te:
+    print("Error Class:" + str(te))
+
 # Loop while the monster and the player are alive. Call fight sequence functions
 while m_health_points > 0 and health_points > 0:
     # Fight Sequence
