@@ -1,1 +1,1 @@
-Lab Tue 10 to 12
+Some string to write to the file
