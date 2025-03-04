@@ -21,3 +21,7 @@ print ("-------------------------------\n")
 print("Operating System type")
 print(os.name)
 print ("-------------------------------\n")
+
+print("Operating System name")
+print(platform.system())
+print ("-------------------------------\n")
