@@ -30,3 +30,8 @@ print(f"\n[Before Fork] Process {os.getpid()}")
 
 file_handle = os.open(file_name, os.O_RDWR | os.O_CREAT)
 print(f"\n[Process {os.getpid()}] Opened file_handle: {file_handle}")
+
+file_object_TextIO = os.fdopen(file_handle, "w+")
+
+file_object_TextIO.write("Some string to write to the file")
+file_object_TextIO.flush()
