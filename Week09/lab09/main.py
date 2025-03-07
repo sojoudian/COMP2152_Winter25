@@ -87,7 +87,7 @@ try:
     m_health_points = function.hero_attacks("string 1", "string 2")
 except TypeError as te:
     print("Error Class: "+ str(te))
-    
+
 # Loop while the monster and the player are alive. Call fight sequence functions
 while m_health_points > 0 and health_points > 0:
     # Fight Sequence
@@ -97,12 +97,14 @@ while m_health_points > 0 and health_points > 0:
     if not (attack_roll % 2 == 0):
         input("You strike (Press enter)")
         # Hero Attacks First
-        m_health_points = function.hero_attacks(combat_strength, m_health_points)
-        if m_health_points != 0:
-            input("The monster strikes (Press enter)!!!")
-            # Monster Attacks Back
-            health_points = function.monster_attacks(m_combat_strength, health_points)
-
+        try:
+            m_health_points = function.hero_attacks(combat_strength, m_health_points)
+            if m_health_points != 0:
+                input("The monster strikes (Press enter)!!!")
+                # Monster Attacks Back
+                health_points = function.monster_attacks(m_combat_strength, health_points)
+        except ValueError:
+            print("Exeption: combat_strength and m_health_points both needed to be integers")
     else:
         # Monster Attacks First
         input("The Monster strikes (Press enter)")
