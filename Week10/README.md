@@ -1,7 +1,7 @@
 # Lab Week 10 - Coding Questions
 
 ## Due Date
-**Saturday, March 16 - Midnight**
+**Saturday, March 19 - Midnight**
 
 ## Overview
 This lab focuses on database query manipulation using SQLite in Python. Students will work with string indexing, row deletion, database connection handling, and error validation. The provided `main.py` and `function.py` files serve as a starting point, with potential syntactical or logical errors that will be addressed during the lab session. If you miss the lab, you are expected to resolve these errors independently before submission.
@@ -47,7 +47,7 @@ This lab focuses on database query manipulation using SQLite in Python. Students
    - `function.py`
 
 ## Notes
-- The lab session will start with an empty `main.py` and `function.py`, gradually building toward the final versions.
+- The lab session will start with an empty `main.py` gradually building toward the final versions.
 - If you miss the lab, you are responsible for troubleshooting and fixing any syntax or logic errors before submission.
 - Use the Lab Manual as a reference throughout the implementation process.
 
