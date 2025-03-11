@@ -20,7 +20,7 @@ file_object_TextIO.write("Some string to write to this file")
 file_object_TextIO.flush()
 
 # windows
-# pid = 1
+# pid = 0
 pid = os.fork()
 if pid == 0:
     print(f"\n[Child PID: {os.getpid()}], [Parent PID: {os.getppid()}]")
@@ -31,7 +31,7 @@ if pid == 0:
 else:
     print(f"\n[Parent PID: {os.getpid()}], [Child PID: {pid}]")    
     print("Wait for child")
-    os.wait()
+    os.waitpid(pid, 0)
     print("child finished")
     file_object_TextIO.close()
 sys.exit(0)    
