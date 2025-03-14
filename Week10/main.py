@@ -1,7 +1,7 @@
 import sqlite3
 from contextlib import closing
 
-db_path = "sqlite3.db"
+db_path = "test.db"
 
 try:
     with closing(sqlite3.connect(db_path)) as db_conn:
