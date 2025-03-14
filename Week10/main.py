@@ -1,6 +1,3 @@
-<<<<<<< HEAD
- 
-=======
 import sqlite3
 from contextlib import closing
 
@@ -31,4 +28,3 @@ try:
                 print(f"Error executing query_1: {e}")                   
 except sqlite3.Error as e:    
     print(f"Database connection error: {e}")
->>>>>>> lab_week10
