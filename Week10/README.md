@@ -1,3 +1,5 @@
+# Merged README
+
 # Lab Week 10 - Coding Questions
 
 ## Due Date
@@ -57,3 +59,67 @@ This lab focuses on database query manipulation using SQLite in Python. Students
 - Page 12-13: Row Deletion
 - Page 16/17: Database Connection Handling
 - Page 17/17: Error Handling
+
+
+# Lab Week 10 - Git Workflow
+
+This guide provides step-by-step instructions for managing your Git workflow for Lab Week 10. Follow these commands to create a new branch, commit changes, merge updates, and push to your repository.
+
+## Steps to Complete Lab Week 10
+
+### 1. Create and Switch to a New Branch
+Create a new branch named `lab_week10` and switch to it:
+```sh
+git checkout -b lab_week10
+```
+
+### 2. Stage and Commit Changes
+Add modified files to the staging area and commit them:
+```sh
+git add .
+git commit -m "Your commit message here"
+```
+
+### 3. Push Changes to Remote Repository
+Push the newly created branch to the remote repository:
+```sh
+git push --set-upstream origin lab_week10
+```
+
+### 4. Switch Back to the Main Branch
+Depending on your repository setup, switch back to the primary branch:
+```sh
+git checkout master  # If your main branch is 'master'
+# OR
+git checkout main    # If your main branch is 'main'
+```
+
+### 5. Pull the Latest Updates from Remote
+Fetch and merge the latest changes from the primary branch:
+```sh
+git pull origin master  # If your main branch is 'master'
+# OR
+git pull origin main    # If your main branch is 'main'
+```
+
+### 6. Merge Changes from `lab_week10`
+Merge the `lab_week10` branch into your primary branch:
+```sh
+git merge lab_week10
+```
+
+### 7. Push Merged Changes to Remote Repository
+Finally, push the updated primary branch to the remote repository:
+```sh
+git push origin master  # If your main branch is 'master'
+# OR
+git push origin main    # If your main branch is 'main'
+```
+
+## Notes
+- Always ensure your local repository is up to date before merging.
+- Resolve any conflicts that arise during the merge process.
+- Use meaningful commit messages for better tracking and collaboration.
+
+---
+This workflow ensures proper version control and collaboration while working on Lab Week 10.
