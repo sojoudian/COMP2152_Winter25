@@ -16,3 +16,12 @@ class Person:
 
     def __del__(self):
         print("The garbage collector is automatically destroying the person object!")    
+
+person1 = Person("Mark", 20, 6)
+
+print("The name of the person is: " + str(person1.name))
+# print("Private: "+ str(person1.__name))  # This will cause an Error
+person1.name = "Alfred"
+print("The name of the person is: " + str(person1.name))
+
+print("Public: " + str(person1.public_prop))
