@@ -10,11 +10,13 @@ class Person(Mammal):
     # __height
 
     def __init__(self, p_name, p_age, p_height):
+        Mammal.__init__(self, p_age)
         # Lab 12 - Call the parent class constructor
 
         # Set the Person-specific fields
         print("Constructor: Adding the Person parts of a person")
         self.name = p_name
+        #self.age = p_age
         self.__height = p_height
 
     def __del__(self):
