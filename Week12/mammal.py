@@ -5,7 +5,11 @@ class Mammal:
         print("Constructor: Inside the Parent class constructor: Making the Mammal part of the object")
         self.age = p_age
         self.__live_birth = True
+
+        # Composition: Heart is part of Mammal's internal structure
         self.heart = Heart()
+
+        # Aggregation: Tick is external, may or may not exist
         self.tick = tick
 
     def __del__(self):
@@ -14,18 +18,19 @@ class Mammal:
     @property
     def live_birth(self):
         return self.__live_birth
+
     @live_birth.setter
-    def live_birth(self, p_live_birth):
+    def height(self, p_live_birth):
         self.__live_birth = p_live_birth
 
     def love(self):
-        print("This mammal is in love.")        
+        print("This mammal is feeling love...")
 
     def mammal_checkup(self):
-        self.heart.beat()  
+        print("Performing mammal health check...")
+        self.heart.beat()
         if self.tick:
             self.tick.suck_blood()
-
 
     def __str__(self):
         tick_status = "attached" if self.tick else "none"

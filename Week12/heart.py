@@ -1,12 +1,12 @@
 # Heart class for composition
 class Heart:
     def __init__(self):
-        print("Composition: Heart is created")
+        print("Composition: Heart is created.")
         self.beats_per_minute = 72
 
     def beat(self):
-        print("Heart is beating.")
+        print("Heart is beating... thump thump.")
 
     def __del__(self):
-        print("Composition: Heart is destroying")
+        print("Composition: Heart is destroyed.")
 
